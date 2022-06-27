@@ -1,0 +1,25 @@
+package com.example.myapplication
+
+fun main(args: Array<String>) {
+    var s : String = readLine()!!
+    var count : Int = 0
+    var i : Int
+    if (s[0].toInt() in 97..122) {
+        var k = (s[0].toInt() - 32).toChar()
+        //s[0] = k   loi ko gan dc
+    }
+    for (i in s.indices) {
+        if (s[i] == ' ' && s[i + 1] != ' ') {
+            count++
+        }
+    }
+    println(s)
+    if (s[0] != ' ')
+        print(count + 1)
+    else
+        print(count)
+}
+
+
+
+
