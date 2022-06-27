@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
     var i : Int
     if (s[0].toInt() in 97..122) {
         var k = (s[0].toInt() - 32).toChar()
-        //s[0] = k   loi ko gan dc
+        s = k + s.substring(1, s.length)
     }
     for (i in s.indices) {
         if (s[i] == ' ' && s[i + 1] != ' ') {
